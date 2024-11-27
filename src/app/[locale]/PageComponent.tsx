@@ -100,31 +100,15 @@ const PageComponent = ({
         locale={locale}
         page={""}
       />
-      <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-HKZ6H2MZMN`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-HKZ6H2MZMN');
-            `,
-          }}
-        />
       <Header locale={locale} navMenuText={navMenuText} indexLanguageText={indexLanguageText}/>
       <div>
         <div className="block overflow-hidden bg-cover bg-center text-black"
              style={{backgroundImage: 'https://assets.website-files.com/6502af467b2a8c4ee8159a5b/6502af467b2a8c4ee8159a77_Group%2047929.svg'}}>
           <div className="mx-auto w-full max-w-7xl px-5 mb-5">
+            
             <div
-              className="mx-auto flex max-w-4xl flex-col items-center text-center pt-10">
+              className="mx-auto flex max-w-4xl flex-col items-center text-center py-10">
               <h1 className="mb-4 text-4xl font-bold md:text-4xl">{indexLanguageText.h1Text}</h1>
-              <div className="mb-5 lg:mb-8">
-                <p className="text-[#7c8aaa] text-xl">{indexLanguageText.pDescription}</p>
-              </div>
 
             </div>
 
@@ -133,90 +117,55 @@ const PageComponent = ({
                 <ImageSplitter locale={locale} indexLanguageText={indexLanguageText}/>
             </div>
 
-            <section id="perfecttidylevel" className="py-12">
+            <section id="how-it-works" className="py-16 bg-gray-50">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-3xl font-bold text-center text-indigo-800 mb-8">{indexLanguageText.h1Text} Preview</h2>
-                <img src="/factorio-gameplay.png" alt="Factorio Calculator Image" className="mx-auto mt-8 rounded-lg shadow-lg" /> 
+                <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">{indexPlayInfoText.h2_0}</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                  <div className="bg-white p-6 rounded-lg shadow-md">
+                    <div className="flex justify-center mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-circle-play w-12 h-12 text-indigo-600">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">{indexPlayInfoText.h2_1}</h3>
+                    <p className="text-gray-600 text-center">{indexPlayInfoText.h2_1_p1}</p></div>
+                  <div className="bg-white p-6 rounded-lg shadow-md">
+                    <div className="flex justify-center mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-mouse-pointer w-12 h-12 text-indigo-600">
+                        <path d="M12.586 12.586 19 19"></path>
+                        <path d="M3.688 3.037a.497.497 0 0 0-.651.651l6.5 15.999a.501.501 0 0 0 .947-.062l1.569-6.083a2 2 0 0 1 1.448-1.479l6.124-1.579a.5.5 0 0 0 .063-.947z"></path>
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">{indexPlayInfoText.h2_2}</h3>
+                    <p className="text-gray-600 text-center">{indexPlayInfoText.h2_2_p1}</p></div>
+                  <div className="bg-white p-6 rounded-lg shadow-md">
+                    <div className="flex justify-center mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-move w-12 h-12 text-indigo-600">
+                        <path d="M12 2v20"></path>
+                        <path d="m15 19-3 3-3-3"></path>
+                        <path d="m19 9 3 3-3 3"></path>
+                        <path d="M2 12h20"></path>
+                        <path d="m5 9-3 3 3 3"></path>
+                        <path d="m9 5 3-3 3 3"></path>
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">{indexPlayInfoText.h2_3}</h3>
+                    <p className="text-gray-600 text-center">{indexPlayInfoText.h2_3_p1}</p></div>
+                  <div className="bg-white p-6 rounded-lg shadow-md">
+                    <div className="flex justify-center mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-circle-check-big w-12 h-12 text-indigo-600">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">{indexPlayInfoText.h2_4}</h3>
+                    <p className="text-gray-600 text-center">{indexPlayInfoText.h2_4_p1}</p></div>
+                </div>
               </div>
             </section>
             
-            <section className="py-8 md:py-12 lg:py-16">
-              <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                <div className="text-center">
-                  <h2 className="text-2xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">{indexFeatureText.h2_0}</h2>
-                </div>
-                <div className="px-5 py-6 mt-8 bg-white lg:mt-12 lg:p-12">
-                  <div className="grid grid-cols-1 gap-8 lg:gap-12 sm:grid-cols-2">
-                    <div className="flex items-start">
-                      <div className="flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" className="h-8 w-8 text-blue-600">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"></path>
-                        </svg>
-                      </div>
-                      <div className="ml-4">
-                        <h3 className="text-lg font-semibold text-black">{indexFeatureText.h2_1}</h3>
-                        <p className="mt-2 text-base text-gray-600">{indexFeatureText.h2_1_p1}</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start">
-                      <div className="flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" className="h-8 w-8 text-blue-600">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"></path>
-                        </svg>
-                      </div>
-                      <div className="ml-4">
-                        <h3 className="text-lg font-semibold text-black">{indexFeatureText.h2_2}</h3>
-                        <p className="mt-2 text-base text-gray-600">{indexFeatureText.h2_2_p1}</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start">
-                      <div className="flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" className="h-8 w-8 text-blue-600">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"></path>
-                        </svg>
-                      </div>
-                      <div className="ml-4">
-                        <h3 className="text-lg font-semibold text-black">{indexFeatureText.h2_3}</h3>
-                        <p className="mt-2 text-base text-gray-600">{indexFeatureText.h2_3_p1}</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start">
-                      <div className="flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" className="h-8 w-8 text-blue-600">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"></path>
-                        </svg>
-                      </div>
-                      <div className="ml-4">
-                        <h3 className="text-lg font-semibold text-black">{indexFeatureText.h2_4}</h3>
-                        <p className="mt-2 text-base text-gray-600">{indexFeatureText.h2_4_p1}</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start">
-                      <div className="flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" className="h-8 w-8 text-blue-600">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"></path>
-                        </svg>
-                      </div>
-                      <div className="ml-4">
-                        <h3 className="text-lg font-semibold text-black">{indexFeatureText.h2_5}</h3>
-                        <p className="mt-2 text-base text-gray-600">{indexFeatureText.h2_5_p1}</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start">
-                      <div className="flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" className="h-8 w-8 text-blue-600">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"></path>
-                        </svg>
-                      </div>
-                      <div className="ml-4">
-                        <h3 className="text-lg font-semibold text-black">{indexFeatureText.h2_6}</h3>
-                        <p className="mt-2 text-base text-gray-600">{indexFeatureText.h2_6_p1}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+            
 
             <section id="testimonials" className="py-16 bg-indigo-50">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

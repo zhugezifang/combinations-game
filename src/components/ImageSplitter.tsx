@@ -76,7 +76,7 @@ const ImageSplitter = ({
   return (
               <div
                 className={"w-[100%] mx-auto rounded-tl-[30px] rounded-tr-[30px] object-fill"} >
-                        <iframe src="https://kirkmcdonald.github.io/calc.html#data=2-0-10&items=advanced-circuit:f:1" allow="autoplay"  style={{ top: '0px', left: '0px',width: '100%', height: '1000px'}}></iframe>
+                        <iframe src="https://combinations.org/" allow="autoplay"  style={{ top: '0px', left: '0px',width: '100%', height: '1000px'}}></iframe>
 
               </div>
             
